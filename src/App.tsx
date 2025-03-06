@@ -1,5 +1,7 @@
 
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
+import Preview from './pages/Preview'
 // import Button from './ui/Button'
 
 function App() {
@@ -8,7 +10,12 @@ function App() {
   return (
     <div className='m-0 p-0'>
 
-      <Home />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/preview" element={<Preview />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }
