@@ -3,7 +3,7 @@ import Button from "./Button"
 import mobile from "/images/mobile.png"
 import { HiEquals } from "react-icons/hi2"
 import { FaFacebook, FaGithub } from "react-icons/fa"
-// import { AiFillTwitterCircle } from "react-icons/ai"
+import { AiFillTwitterCircle } from "react-icons/ai"
 import { useState } from "react"
 const Links = () => {
     const [github, setGithub] = useState("false")
@@ -33,8 +33,8 @@ const Links = () => {
                     <label htmlFor="" className="text-[12px] text-[#6a6a6a]">Platform</label>
                     <div className="flex items-center w-full p-[10px] rounded-lg shadow-md border-[1px] border-[#6a6a6a] mt-1 gap-1">
                         {github && <FaGithub className="text-[#6a6a6a]" />}
-                        {/* <FaFacebook className="text-[#6a6a6a]" />
-                        <AiFillTwitterCircle className="text-[#6a6a6a]" /> */}
+                        <FaFacebook className="text-[#6a6a6a]" />
+                        <AiFillTwitterCircle className="text-[#6a6a6a]" />
                         <select name="" className="w-[100%] outline-none bg-transparent">
                             <option value="" className="text-[#6a6a6a]">---select---</option>
                             <option value="" className="text-[#6a6a6a]" onSelect={() => setGithub("true")}> GitHub</option>
